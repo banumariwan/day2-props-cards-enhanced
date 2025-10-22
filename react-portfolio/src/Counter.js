@@ -1,24 +1,31 @@
 import React, { useState } from "react";
 
-function Counter() {
-  const [count, setCount] = useState(0);
 
-  const handleIncrease = () => setCount(count + 1);
-  const handleDecrease = () => setCount(count - 1);
-  const handleReset = () => setCount(0);
+function Counter(){
+const [count,setCount] = useState(0);
 
-  return (
-    <div style={styles.container}>
+
+
+const handleIncrease = () => setCount(count + 1);
+const handleDecrease = () => setCount(count - 1);
+const handleReset = () => setCount(0);
+
+
+
+return(
+<div style={styles.container}>
       <h2>Counter App</h2>
       <h3>{count}</h3>
+
       <div>
-        <button style={styles.btn} onClick={handleIncrease}>+</button>
+      <button style={styles.btn} onClick={handleIncrease}>+</button>
         <button style={styles.btn} onClick={handleDecrease}>−</button>
         <button style={styles.btn} onClick={handleReset}>Reset</button>
       </div>
-    </div>
-  );
+</div>
+);
 }
+
 
 const styles = {
   container: {

@@ -1,25 +1,141 @@
-.App {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header {
-  background: #f0f8ff;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.app-header {
   text-align: center;
+  color: white;
+  margin-bottom: 4rem;
 }
 
-.about-section {
-  background: #f9f9f9;
-  padding: 20px;
+.app-header h1 {
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.app-header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.app-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-footer {
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.name-role h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.bio {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.skills-section h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  background-color: #e0f7fa;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin: 0.2rem;
+  display: inline-block;
+}
+
+.contact-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
   border-radius: 8px;
-  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-h1 {
-  color: #2c3e50;
+.contact-btn:hover {
+  background: #764ba2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    padding: 2rem 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 350px;
+  }
 }
