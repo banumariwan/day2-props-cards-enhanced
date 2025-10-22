@@ -10,3 +10,5 @@ return(
 </section>
 );
 }
+
+export default Skills
