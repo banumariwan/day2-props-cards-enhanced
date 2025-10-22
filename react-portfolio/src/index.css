@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {  /* TARGET HEADER CLASS */
+  background: #f0f8ff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section {  /* TARGET ABOUT CLASS */
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+
+.skills-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border: 2px solid #e0e0e0;
 }

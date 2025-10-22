@@ -4,7 +4,7 @@ import About from "./About";
 
 function App(){
 return(
-    <div>
+    <div className="App">
         <Header />
         <Skills />
         <About />
